@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+  grid-template-rows: 80px 1fr; 
+  grid-template-areas:
+      "header header"
+      "sidebar content";
+  height: 100vh; 
+}
+
+.header {
+  grid-area: header;
+  background-color: #000203; 
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #70bd90; 
+  color: #fff;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  background-color: #8e8989; 
+  color: #fff;
+  padding: 20px;
+  background-image: url('atv2.jpg');
+  background-size: 100%; 
+    background-position: center;
+}
+/* Estilos adicionais para o conteúdo dinâmico */
+.content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2em;
+}
